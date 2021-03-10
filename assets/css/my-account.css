@@ -1,0 +1,164 @@
+.page-content .col .card {
+    -webkit-box-shadow: 0px 1.74px 3.77px 1.02px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1.74px 3.77px 1.02px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1.74px 3.77px 1.02px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.page-content .col .card h4 {
+    font-size: 22px;
+    text-transform: initial;
+    margin-bottom: 30px;
+    color: #4997CC;
+}
+
+.page-content .col .card form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-content .col .card .form-four-elements .form-group {
+    width: 23%;
+}
+
+.page-content .col .card .form-five-elements .form-group {
+    width: 18%;
+}
+
+.page-content .col .card form input,
+.page-content .col .card form select {
+    color: #000;
+    font-size: 15px;
+    border-radius: 99px;
+    /*border: 1px solid #ACBBC3;*/
+}
+
+.page-content .col .card form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/account/select-icon.png") white no-repeat calc(97% - 10px) !important;
+}
+
+.page-content .col .card form .form-control-icon {
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.page-content .col .card form .input-group-append span {
+    border-radius: 99px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: transparent;
+}
+
+.page-content .col .card form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ACBBC3;
+    opacity: 1; /* Firefox */
+}
+
+.page-content .col .card form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ACBBC3;
+}
+
+.page-content .col .card form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ACBBC3;
+}
+
+.page-content .col .card .form-four-elements .form-group.country-select,
+.page-content .col .card .form-four-elements .form-group.postcode-input {
+    width: 19%;
+}
+
+.page-content .col .card .form-four-elements .form-group.address-input {
+    width: 27%;
+}
+
+.page-content .col .card .form-five-elements .input-group-prepend span {
+    background-color: transparent;
+    color: #ACBBC3;
+    padding: .3rem .3rem;
+    border-bottom-left-radius: 99px;
+    border-top-left-radius: 99px;
+    /*border-right: 0;*/
+}
+
+.page-content .col .card .form-five-elements .phone-class {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.page-content .col .card .card-body form:nth-child(3) {
+    margin-top: 20px;
+}
+
+.page-content .col .card .card-body .hide-menu input {
+    height: calc(0.5em + .75rem ) !important;
+    width: calc(0.5em + .75rem ) !important;
+    flex: 0 1 auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.page-content .col .card .card-body .hide-menu span {
+    color: #657584;
+    font-size: 13px;
+    font-weight: bold;
+}
+.page-content .col .card .card-body .hide-menu .input-group  {
+    height: calc(0.5em + .75rem ) !important;
+}
+.page-content .col .card .card-body .hide-menu {
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    top: 0;
+    left: -1px;
+    border: 2px solid #E7EBEF;
+    border-radius: 3px;
+    background-color: #E7EBEF;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 14px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 7px;
+}
+
+.page-content .col .card form.printing-settings {
+    justify-content: left;
+    align-items: center;
+}
+
+.page-content .col .card form.printing-settings .form-group {
+    width: auto;
+    margin-right: 5%;
+}
+.page-content .col .card form.printing-settings .form-group.print-name-input {
+     width: 18%;
+ }
+
+.page-content .col .card form.printing-settings  .hide-menu input[type=checkbox]:before {
+    border: 2px solid #E7EBEF;
+    background-color: #fff;
+}

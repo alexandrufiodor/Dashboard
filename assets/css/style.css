@@ -1,0 +1,242 @@
+/* Bottom Content */
+
+.bottom-content {
+    margin-top: 20px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.bottom-content .col .card-body {
+    -webkit-box-shadow: 0px 1.74px 3.77px 1.02px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1.74px 3.77px 1.02px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1.74px 3.77px 1.02px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.bottom-content .map-section {
+    margin-top: 20px;
+}
+
+.bottom-content .map-section p {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.bottom-content .map-section .col-9 {
+    border-right: 1px solid #D0D0D4;
+    padding: 1.25rem;
+    padding-left: 2rem;
+}
+
+.bottom-content .map-section .col-3 {
+    padding: 1.25rem;
+}
+
+.bottom-content .map-section .card-body {
+    padding: 0rem;
+}
+
+.header-title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.left-section .col:first-child {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+}
+
+.left-section .range img {
+    width: 100%;
+}
+
+.left-section .col .col {
+    padding-left: 20px;
+}
+
+.left-section .col .col:first-child {
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 0px solid #E8E8E8;
+}
+
+
+.left-section .header-title {
+    color: #657584;
+    font-size: 20px;
+}
+
+.bottom-content .left-section {
+    height: auto;
+}
+
+.bottom-content .left-section .card {
+    height: auto;
+}
+
+.bottom-content .left-section .cost-value .name {
+    color: #657584;
+    font-size: 17px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.bottom-content .left-section .cost-value .percentage,
+.bottom-content .left-section .cost-value i {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.bottom-content .left-section .cost-value .percentage-up,
+.bottom-content .left-section .cost-value i.fa-arrow-up {
+    color: #C94343;
+}
+
+.bottom-content .left-section .cost-value .percentage-down,
+.bottom-content .left-section .cost-value i.fa-arrow-down {
+    color: #4FB535;
+}
+
+.bottom-content .left-section .cost-value .bottom {
+    margin-top: 10px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bottom-content .left-section .cost-value {
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+
+.bar-chart {
+
+    height: 24px;
+    margin-bottom: 2rem;
+}
+
+.bar-chart .bar-chart--inner {
+
+    height: 100%;
+    display: block;
+    margin-bottom: 0.3rem;
+    position: relative;
+    will-change: width;
+    border-bottom-right-radius: 99px;
+    border-top-right-radius: 99px;
+}
+
+.chart1 .bar-chart.primary .bar-chart--inner {
+    background: #FE8626;
+}
+
+.chart1 .bar-chart.secondary .bar-chart--inner {
+    background: #35BEE2;
+}
+
+.chart1 .bar-chart.tertiary .bar-chart--inner {
+    background: #74BC29;
+}
+
+.chart1 .bar-chart.fourth .bar-chart--inner {
+    background: #6C4BA2;
+}
+
+.chart1 .bar-chart.fifth .bar-chart--inner {
+    background: #FE2939;
+}
+
+.right-section .chart-bar {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background: url(../images/chart/chart.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.chart2 .bar-chart.secondary .bar-chart--inner {
+    background: #35BEE2;
+}
+
+.chart2 .bar-chart.tertiary .bar-chart--inner {
+    background: #6C4BA2;
+}
+
+.chart2 .bar-chart.fourth .bar-chart--inner {
+    background: #FE8626;
+}
+
+.chart2 .bar-chart.fifth .bar-chart--inner {
+    background: #FE2939;
+}
+
+.chart2 .bar-chart.primary .bar-chart--inner {
+    background: #74BC29;
+}
+
+.chart2 .bar-chart.secondary .bar-chart--inner {
+    background: #35BEE2;
+}
+
+.chart2 .bar-chart.tertiary .bar-chart--inner {
+    background: #6C4BA2;
+}
+
+.chart2 .bar-chart.fourth .bar-chart--inner {
+    background: #FE8626;
+}
+
+.chart2 .bar-chart.fifth .bar-chart--inner {
+    background: #FE2939;
+}
+
+.chart-bar .bar-chart:last-child {
+    margin-bottom: 0;
+}
+
+.chart-bar {
+    border-bottom: 1px solid #000;
+}
+
+.chart-bar .bar-chart {
+    position: relative;
+    display: flex;
+}
+
+.chart-bar .bar-chart .bar-chart--text {
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.chart-bar .bar-chart .bar-chart--percentage {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.title-section {
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+
+.title-section h4 {
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+

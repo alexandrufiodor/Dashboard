@@ -1,0 +1,73 @@
+.page-content .top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin-right: 16px;
+    margin-left: 16px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.page-content .top-content div {
+    display: flex;
+}
+
+.page-content .top-content div span {
+    color: #657584;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 39px;
+    padding-right: 16px;
+}
+
+.page-content .top-content div select,
+.page-content .top-content .calendar-section {
+    color: #657584;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 99px;
+    background-color: #E7EBEF;
+    border: 0;
+}
+
+.page-content .top-content div .calendar-section {
+    padding: 0px 20px;
+
+}
+
+.page-content .top-content div .calendar-section img {
+    margin-right: 15px;
+}
+
+.page-content .top-content div select {
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align-last: center;
+}
+
+.page-content .top-content .select-section {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 99px;
+    background-color: #E7EBEF;
+}
+
+.page-content .top-content .carrier .select-section {
+    width: 160px;
+}
+
+.page-content .top-content .shipper .select-section {
+    width: 200px;
+}
+
+.page-content .top-content .chart-type .select-section {
+    width: 120px;
+}
+

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Orders Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A premium admin dashboard template by themesbrand" name="description"/>
+    <meta content="Mannatthemes" name="author"/>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/orders-report.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/allpagesStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/top-content.css" rel="stylesheet" type="text/css"/>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.radialBar.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+
+<!-- Top Bar Start -->
+<div class="topbar">
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <a href="index.html" class="logo">
+                    <span>
+                            <img src="assets/images/logo.svg" alt="logo-large" class="logo-lg">
+                        </span>
+            </a>
+        </div>
+        <ul class="list-unstyled topbar-nav mb-0 breadcrumb-block">
+            <li>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Analytics</a></li>
+                    <li class="breadcrumb-item active">Orders Report</li>
+                </ol>
+
+            </li>
+        </ul>
+        <ul class="list-unstyled topbar-nav float-right mb-0 nav-right-icon">
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/top-menu/search.svg" alt="profile-user" class="rounded-circle"/>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/top-menu/print.svg" alt="profile-user" class="rounded-circle"/>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/top-menu/group35.svg" alt="profile-user" class="rounded-circle"/>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/top-menu/info.svg" alt="profile-user" class="rounded-circle"/>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/top-menu/account1.svg" alt="profile-user" class="rounded-circle"/>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                </div>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+    <!-- end navbar-->
+</div>
+
+
+<div class="page-wrapper">
+    <div class="page-wrapper-inner">
+        <div class="page-inner">
+            <div class="left-sidenav">
+
+                <ul class="metismenu left-sidenav-menu" id="side-nav">
+
+
+                    <li>
+                        <a href="orders.html"><img src="./assets/images/menu-icon/orders.svg" alt="">
+                            <p>Orders</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="./assets/images/menu-icon/operations.svg" alt="">
+                            <p>Operations</p>
+                        </a>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="javascript: void(0);"><img src="./assets/images/menu-icon/analytics-icon.svg" alt="">
+                            <p>Analytics</p>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="driver-performance.html">Driver performance</a></li>
+                            <li><a href="#">CoD Remit Report</a></li>
+                            <li><a href="#">Ratechart Report</a></li>
+                            <li><a href="#">Credit Report</a></li>
+                            <li><a href="balance-report.html">Balance Report</a></li>
+                            <li><a href="orders-report.html">Orders Report</a></li>
+                            <li><a href="#">Carrier Invoice</a></li>
+                            <li><a href="#">Reports Download</a></li>
+                            <li><a href="#">Postcode Report</a></li>
+                            <li><a href="#">Messaging Report</a></li>
+                            <li><a href="#">Dashboard Graphs</a></li>
+                            <li><a href="#">KPI settings</a></li>
+                            <li><a href="#">Service Report</a></li>
+                            <li><a href="#">Invoice Dashboard</a></li>
+                            <li><a href="#">CoD Remittance</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="has-submenu">
+                        <a href="javascript: void(0);"><img src="./assets/images/menu-icon/account-icon.svg" alt="">
+                            <p>Accounts</p>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="my-accounts.html">My Account</a></li>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Carriers</a></li>
+                            <li><a href="#">Contracts</a></li>
+                            <li><a href="#">Surcharges</a></li>
+                            <li><a href="#">Messaging</a></li>
+                            <li><a href="#">Dangerous Goods</a></li>
+                            <li><a href="#">Auditing</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);"><img src="./assets/images/menu-icon/settings-icon.svg" alt="">
+                            <p>Settings</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row top-content">
+                        <div class="form-till">
+                            <span>From - Till</span>
+                            <div class="calendar-section">
+                                <img src="./assets/images/calendar-icon.svg" alt="">
+                                <span>
+                                        29.12.2020 - 29.12.2020
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="carrier">
+                            <span>Carrier</span>
+                            <div class="select-section">
+                                <select name="" id="">
+                                    <option value="All">All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="shipper">
+                            <span>Shipper</span>
+                            <div class="select-section">
+                                <select name="" id="">
+                                    <option value="All">All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="chart-type">
+                            <span>Chart Type</span>
+                            <div class="select-section">
+                                <select name="" id="">
+                                    <option value="Bar">Bar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bottom-content">
+                        <div class="col col-12 top-section">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    <h4 class="mt-0 header-title">Delivery on time</h4>
+                                                    <div id="radialbar"></div>
+
+                                                    <style>
+                                                        #radialbar .apexcharts-datalabels-group{
+                                                            display: none!important;
+                                                        }
+                                                        #radialbar{
+                                                            transform: rotate(180deg);
+                                                        }
+                                                    </style>
+                                                    <script>
+                                                        var options1 = {
+                                                            chart: {
+                                                                height: 320,
+                                                                type: "radialBar",
+                                                            },
+                                                            series: [79, 95],
+                                                            plotOptions: {
+                                                                radialBar: {
+                                                                    dataLabels: {
+                                                                        // total: {
+                                                                        //     show: true
+                                                                        // }
+                                                                    }
+                                                                }
+                                                            },
+                                                            labels: ['Delivery on Time', 'Delivery Allowable failures'],
+                                                            colors:['#0088F0', '#EF2A82']
+                                                        };
+
+                                                        new ApexCharts(document.querySelector("#radialbar"), options1).render();
+                                                    </script>
+
+                                                    <div class="text-radialBar">
+                                                        <div class="left-top-text-number first-color">
+                                                            <p class="percentage-up-down">
+
+                                                                    <span class="percentage-down">10%</span>
+                                                                    <i class="fas fa-arrow-down"></i>
+
+                                                            </p>
+                                                            <p class="percentage-block"><span class="circle-color"></span><span class="percentage-number">79</span><span class="percentage-symbol">%</span></p>
+                                                            <p class="percentage-text">Delivery on time</p>
+                                                        </div>
+                                                        <div class="right-top-text-number second-color">
+                                                            <p class="percentage-up-down">
+
+                                                                <span class="percentage-down">4,7%</span>
+                                                                <i class="fas fa-arrow-down"></i>
+
+                                                            </p>
+                                                            <p class="percentage-block"><span class="circle-color"></span><span class="percentage-number">95</span><span class="percentage-symbol">%</span></p>
+                                                            <p class="percentage-text">Delivery Allowable failures</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="mt-0 header-title">Allowable Failures vs Non
+                                                        Allowable</h4>
+
+                                                    <canvas id="flot-chart"></canvas>
+
+                                                    <script>
+                                                        Chart.types.Doughnut.extend({
+                                                            name: "DoughnutTextInside",
+                                                            showTooltip: function () {
+                                                                this.chart.ctx.save();
+                                                                Chart.types.Doughnut.prototype.showTooltip.apply(this, arguments);
+                                                                this.chart.ctx.restore();
+                                                            },
+                                                            draw: function () {
+                                                                Chart.types.Doughnut.prototype.draw.apply(this, arguments);
+
+                                                                var width = this.chart.width,
+                                                                    height = this.chart.height;
+
+                                                                var fontSize = (height / 114).toFixed(2);
+                                                                this.chart.ctx.font = fontSize + "em Verdana";
+                                                                this.chart.ctx.textBaseline = "middle";
+
+                                                                var text = "287",
+                                                                    textX = Math.round((width - this.chart.ctx.measureText(text).width) / 2),
+                                                                    textY = height / 2;
+
+                                                                this.chart.ctx.fillText(text, textX, textY);
+                                                            }
+                                                        });
+
+                                                        var data = [{
+                                                            value: 65,
+                                                            color: "#EF2A82"
+                                                        }, {
+                                                            value: 35,
+                                                            color: "#0088F0"
+                                                        }];
+
+                                                        var DoughnutTextInsideChart = new Chart($('#flot-chart')[0].getContext('2d')).DoughnutTextInside(data, {
+                                                            responsive: true
+                                                        });
+                                                    </script>
+
+                                                    <div class="text-for-chart">
+                                                        <div class="row">
+                                                            <div class="col-6 first-number">
+                                                                <div>
+                                                                    <span class="circle-color"></span>
+                                                                    <span class="number-color">121</span>
+                                                                    <p>Allow</p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-6 second-number">
+                                                                <div>
+                                                                    <span class="circle-color"></span>
+                                                                    <span class="number-color">166</span>
+                                                                    <p>Not Allow</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 header-title">Failure Reasons</h4>
+                                            <div id="donut-chart"></div>
+
+                                            <style>
+                                                #donut-chart .apexcharts-datalabels-group{
+                                                    display: none!important;
+                                                }
+                                                #donut-chart .apexcharts-canvas {
+                                                    margin: auto;
+                                                }
+                                                /*#donut-chart{*/
+                                                /*    transform: rotate(180deg);*/
+                                                /*}*/
+                                            </style>
+                                            <script>
+                                                var options = {
+                                                    series: [12, 2, 6, 42, 33],
+                                                    chart: {
+                                                         width: 500,
+                                                        type: 'donut',
+                                                    },
+                                                    dataLabels: {
+                                                        enabled: false
+                                                    },
+                                                    tooltip: {
+                                                        enabled: false,
+                                                    },
+                                                    stroke: {
+                                                        show: false,
+                                                    },
+
+                                                    responsive: [{
+                                                        breakpoint: 480,
+                                                        options: {
+                                                            chart: {
+                                                                width: 200
+                                                            },
+                                                            legend: {
+                                                                show: false
+                                                            }
+                                                        }
+                                                    }],
+                                                    legend: {
+                                                        position: 'right',
+                                                        offsetY: 0,
+                                                        height: 230,
+                                                    },
+                                                    labels: ['Damaged 12%', 'Wrong address 2%', 'Lost 6%', 'Late 33%', 'Carded 42%'],
+                                                    colors:['#6C4BA2', '#F2C22F', '#35BEE2', '#74BC29', '#FE8626']
+                                                };
+
+                                                var chart = new ApexCharts(document.querySelector("#donut-chart"), options);
+                                                chart.render();
+
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col col-12 bottom-section">
+                            <div class="row">
+                                <div class="col col-7">
+                                    <div class="card">
+                                        <div class="card-body">
+                                                   <span class="title-section">
+                                                        <h4 class="mt-0 header-title">Lost / Damaged Consignments</h4> By Carrier
+                                                    </span>
+
+                                            <div class="chart-bar chart1">
+                                                <div class="bar-chart primary" data-total="42">
+                                                    <span class="bar-chart--text">Royal Mail</span>
+                                                    <span class="bar-chart--inner" style="width:80%;"></span>
+                                                </div>
+
+                                                <div class="bar-chart secondary" data-total="39">
+                                                    <span class="bar-chart--text">Parcelforce</span>
+                                                    <span class="bar-chart--inner" style="width:60%;"></span>
+                                                </div>
+
+                                                <div class="bar-chart tertiary" data-total="11">
+                                                    <span class="bar-chart--text">TNT</span>
+                                                    <span class="bar-chart--inner" style="width:40%;"></span>
+                                                </div>
+
+                                                <div class="bar-chart fourth" data-total="6.5">
+                                                    <span class="bar-chart--text">DPD</span>
+                                                    <span class="bar-chart--inner" style="width:25%;"></span>
+                                                </div>
+
+                                                <div class="bar-chart fifth" data-total="0.8">
+                                                    <span class="bar-chart--text">DX</span>
+                                                    <span class="bar-chart--inner" style="width:10%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-5 map-section">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="map1">
+                                                <h4 class="mt-0 header-title">Falware hotsports</h4>
+                                                <div class="map">
+                                                    <img src="./assets/images/map1.svg" alt="" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+
+        </div>
+        <!-- container -->
+
+    </div>
+</div>
+
+
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/waves.min.js"></script>
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+<script src="assets/plugins/moment/moment.js"></script>
+
+<script src="assets/plugins/apexcharts/apexcharts.min.js"></script>
+<script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script>
+<script src="https://apexcharts.com/samples/assets/ohlc.js"></script>
+<script src="assets/pages/jquery.apexcharts.init.js"></script>
+
+
+<script src="assets/plugins/flot-chart/jquery.flot.min.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.time.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.resize.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.pie.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.selection.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.stack.js"></script>
+<script src="assets/plugins/flot-chart/curvedLines.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.crosshair.js"></script>
+<script src="assets/pages/jquery.flot.init.js"></script>
+
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>
